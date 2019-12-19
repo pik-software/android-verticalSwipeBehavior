@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">VerticalSwipeBehavior</string>
+    <string name="app_name">SwipeBehavior</string>
+    <string name="drag_me">Drag me</string>
+    <string name="refresh">Обновить</string>
 </resources>

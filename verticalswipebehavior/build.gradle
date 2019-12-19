@@ -1,16 +1,15 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion project.compile
     buildToolsVersion project.buildToolsVersion
     defaultConfig {
-        applicationId "io.apiqa.android.exampleverticalswipe"
         minSdkVersion project.min
         targetSdkVersion project.target
-        versionCode 1
-        versionName "1.0"
+        versionCode codeVersion.toInteger()
+        versionName nameVersion
+        consumerProguardFiles 'consumer-rules.pro'
     }
     buildTypes {
         release {
@@ -21,10 +20,8 @@ android {
 }
 
 dependencies {
-    implementation project(':verticalswipebehavior')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.core:core-ktx:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
 }
+
+apply from: "publish.gradle"
