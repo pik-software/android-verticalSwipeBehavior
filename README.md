@@ -9,7 +9,9 @@ Moves the released view at the given vertical position.
 Download
 --------
 
-Add repository
+[ ![Download](https://api.bintray.com/packages/iljaosintsev/VerticalSwipeBehavior/verticalswipebehavior/images/download.svg) ](https://bintray.com/iljaosintsev/VerticalSwipeBehavior/verticalswipebehavior/_latestVersion)
+
+Check repository
 
 ``` gradle
 allprojects {
@@ -19,7 +21,7 @@ allprojects {
 }
 ```
 
-and dependency in to `build.gradle`
+Add dependency in to `build.gradle`
 
 ``` gradle
 dependencies {
