@@ -15,9 +15,7 @@ class AlphaElevationSideEffect: SideEffect {
     }
 
     override fun apply(child: View, factor: Float) {
-        if (elevation > 0f) { // special for elevation-aware view
-            child.elevation = elevation * (1f - abs(factor))
-        }
+        child.elevation = elevation * (1f - abs(factor)) // special for elevation-aware view
         child.alpha = 1f - abs(factor)
     }
 }
