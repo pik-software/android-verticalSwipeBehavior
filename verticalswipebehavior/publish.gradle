@@ -20,14 +20,14 @@ bintray {
     user = prop.getProperty("bintrayUser")
     key = prop.getProperty("bintrayApiKey")
     group = project.property('group')
+    version = project.property("nameVersion")
     publications = ["VerticalSwipeBehavior"]
 
     pkg {
         repo = project.property("repo")
         name = project.property('name')
-        licenses = ["Apache-2.0"]
+        licenses = ["MIT"]
         vcsUrl = project.property('gitUrl')
-        userOrg = project.property("organization")
         websiteUrl = project.property('siteUrl')
         publicDownloadNumbers = true
         version {
