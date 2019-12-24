@@ -3,8 +3,9 @@ package io.apiqa.android.verticalswipe
 import android.view.View
 
 /**
- * Не изменяет никакие свойства view
+ * Does not change any properties of view
  */
+@Suppress("unused")
 class WithoutSideEffect: SideEffect {
 
     override fun onViewCaptured(child: View) {

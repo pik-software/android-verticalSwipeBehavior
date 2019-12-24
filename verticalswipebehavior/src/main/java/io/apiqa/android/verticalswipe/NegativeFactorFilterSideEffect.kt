@@ -4,7 +4,7 @@ import android.view.View
 import kotlin.math.abs
 
 /**
- * Применяет переданный делегат [delegate] только если view перемещается вверх
+ * Applies the [delegate] only if view moves upwards
  */
 @Suppress("unused")
 class NegativeFactorFilterSideEffect(private val delegate: SideEffect): SideEffect by delegate {

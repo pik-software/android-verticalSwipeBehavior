@@ -4,9 +4,9 @@ import kotlin.math.min
 
 @Suppress("unused")
 /**
- *  Ограничивается перемещение снизу на часть высоты view
- *  @param maxFraction коэффициент ограничения максимальной позиции
- *  @param minFraction коэффициент прогресса при перемещении вверх
+ *  Restricts movement down a part of the view height
+ *  @param maxFraction maximum position limit factor
+ *  @param minFraction upward progress factor
  */
 class BelowFractionalClamp(
     private val maxFraction: Float= 1f,

@@ -3,7 +3,7 @@ package io.apiqa.android.verticalswipe
 import android.view.View
 
 /**
- * Изменение свойств view в зависимости от прогресса перемещения.
+ * Change of view properties depending on the progress of movement.
  * @see VerticalClamp
  */
 interface SideEffect {
@@ -11,9 +11,11 @@ interface SideEffect {
     fun onViewCaptured(child: View)
 
     /**
-     * Назначает свойства [child] в зависимости от [factor]
-     * @param child объект перемещения
-     * @param factor прогресс перемещения
+     * Apply new property value for [child] depends on [factor]
+     * @param child target movement
+     * @param factor movement progress, from 0 to 1
+     * @see [VerticalClamp.downCast]
+     * @see [VerticalClamp.upCast]
      */
     fun apply(child: View, factor: Float)
 }

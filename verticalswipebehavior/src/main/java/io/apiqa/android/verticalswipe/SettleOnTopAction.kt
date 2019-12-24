@@ -4,7 +4,8 @@ import android.view.View
 import androidx.customview.widget.ViewDragHelper
 
 /**
- * При перемещении view вниз возвращает ее в начальную точку. При перемещении выше - уводит за экран
+ * When view moved downwards, it returns to the initial position.
+ * Moves above - takes away from the screen.
  */
 @Suppress("unused")
 class SettleOnTopAction: PostAction {

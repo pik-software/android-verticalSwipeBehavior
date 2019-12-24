@@ -4,7 +4,7 @@ import android.view.View
 import androidx.customview.widget.ViewDragHelper
 
 /**
- * При завершении жеста перемещает view в начальную позицию
+ * When the gesture is complete, it moves the view to the starting position
  */
 class OriginSettleAction: PostAction {
 

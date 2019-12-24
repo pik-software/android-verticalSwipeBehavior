@@ -4,9 +4,9 @@ import kotlin.math.max
 import kotlin.math.min
 
 /**
- * Ограничивает перемещение сверху и снизу на часть высоты view
- * @param maxFraction коэффициент ограничения максимальной позиции
- * @param minFraction коэффициент ограничения минимальной позиции
+ * Restricts movement up and down by part of the view height
+ * @param maxFraction maximum position limit factor
+ * @param minFraction minimum position limit factor
  */
 class FractionClamp(
     private val maxFraction: Float = 1f,

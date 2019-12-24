@@ -4,7 +4,7 @@ import android.view.View
 import kotlin.math.abs
 
 /**
- * Изменение прозрачности и elevation
+ * Changing alpha and elevation of view
  */
 class AlphaElevationSideEffect: SideEffect {
 

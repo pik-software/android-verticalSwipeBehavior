@@ -150,14 +150,14 @@ class VerticalSwipeBehavior<V: View>: CoordinatorLayout.Behavior<V> {
     interface SwipeListener {
 
         /**
-         * Будет вызвана анимация перемещения view
-         * @param diff с какого расстояния будет вызвана анимация
+         * Сalled before settle
+         * @param diff passed distance
          */
         fun onPreSettled(diff: Int)
 
         /**
-         * Анимация перемещения view завершена
-         * @param diff с какого расстояния анимация была запущена
+         * Сalled after settle
+         * @param diff passed distance
          */
         fun onPostSettled(diff: Int)
     }
