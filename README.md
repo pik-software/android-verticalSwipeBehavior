@@ -71,6 +71,7 @@ Details
 Default implementation `AlphaElevationSideEffect` change alpha and elevation of view.
 You may use `NegativeFactorFilterSideEffect` for simple composition of behavior.
 `WithoutSideEffect` does not change any properties of view.
+`PropertySideEffect` - common way for changing several properties of view.
 
 ``` kotlin
 class AlphaElevationSideEffect: SideEffect {
@@ -84,7 +85,7 @@ class AlphaElevationSideEffect: SideEffect {
 
 * `VerticalClamp` – Have limits on moving view vertically.
 It is often necessary to limit movement to a part of the height of view.
-This is done by `FractionClamp`.
+This is done by `FractionClamp`. Also you can use `SensitivityClamp` for tuning sensitivity.
 
 ``` kotlin
 class FractionClamp(private val maxFraction: Float = 1f, private val minFraction: Float = 1f): VerticalClamp {
@@ -121,5 +122,9 @@ class OriginSettleAction: PostAction {
 }
 ```
 
+Blogs
+--------
+
+[Пишем гибкий VerticalSwipeBehavior | Хабр](https://habr.com/ru/post/481910/)
 
 
