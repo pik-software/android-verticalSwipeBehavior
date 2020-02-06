@@ -2,7 +2,6 @@ package io.apiqa.android.verticalswipe
 
 import kotlin.math.min
 
-@Suppress("unused")
 /**
  *  Restricts movement down a part of the view height
  *  @param maxFraction maximum position limit factor
