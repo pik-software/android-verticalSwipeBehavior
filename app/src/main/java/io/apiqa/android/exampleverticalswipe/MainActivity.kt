@@ -46,8 +46,10 @@ class MainActivity : AppCompatActivity() {
         val drag = findViewById<View>(R.id.drag)
         VerticalSwipeBehavior.from(drag).apply {
             settle = SettleOnTopAction()
-            sideEffect = NegativeFactorFilterSideEffect(AlphaElevationSideEffect())
-            clamp = BelowFractionalClamp(minFraction = 3f)
+            val sideDelegate = PropertySideEffect(View.ALPHA, View.SCALE_X, View.SCALE_Y)
+            sideEffect = NegativeFactorFilterSideEffect(sideDelegate)
+            val clampDelegate = BelowFractionalClamp(minFraction = 3f)
+            clamp = SensitivityClamp(downSensitivity = 0.5f, delegate = clampDelegate)
             listener = eventListener
         }
     }
