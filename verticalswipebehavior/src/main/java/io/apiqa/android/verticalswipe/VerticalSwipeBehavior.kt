@@ -71,18 +71,16 @@ class VerticalSwipeBehavior<V: View>: CoordinatorLayout.Behavior<V> {
 
         override fun onViewReleased(child: View, xvel: Float, yvel: Float) {
             val diff = child.top - originTop
-            if (abs(yvel) > 0) {
-                val settled = dragHelper?.let {
-                    if (diff > 0) {
-                        settle.releasedBelow(it, diff, child)
-                    } else {
-                        settle.releasedAbove(it, diff, child)
-                    }
-                } ?: false
-                if (settled) {
-                    listener?.onPreSettled(diff)
-                    child.postOnAnimation(RecursiveSettle(child, diff))
+            val settled = dragHelper?.let {
+                if (diff > 0) {
+                    settle.releasedBelow(it, diff, child)
+                } else {
+                    settle.releasedAbove(it, diff, child)
                 }
+            } ?: false
+            if (settled) {
+                listener?.onPreSettled(diff)
+                child.postOnAnimation(RecursiveSettle(child, diff))
             }
             currentPointer = INVALID_POINTER_ID
         }
