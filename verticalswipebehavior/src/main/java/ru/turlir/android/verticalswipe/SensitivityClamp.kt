@@ -1,4 +1,4 @@
-package io.apiqa.android.verticalswipe
+package ru.turlir.android.verticalswipe
 
 /**
  * Reduces each move by several times and delegates the definition of the restriction

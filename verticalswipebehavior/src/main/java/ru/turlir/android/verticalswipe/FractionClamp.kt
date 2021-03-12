@@ -1,4 +1,4 @@
-package io.apiqa.android.verticalswipe
+package ru.turlir.android.verticalswipe
 
 import kotlin.math.max
 import kotlin.math.min

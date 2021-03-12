@@ -1,4 +1,4 @@
-package io.apiqa.android.verticalswipe
+package ru.turlir.android.verticalswipe
 
 import android.content.Context
 import android.util.AttributeSet
@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.customview.widget.ViewDragHelper
-import kotlin.math.abs
 
 class VerticalSwipeBehavior<V: View>: CoordinatorLayout.Behavior<V> {
 

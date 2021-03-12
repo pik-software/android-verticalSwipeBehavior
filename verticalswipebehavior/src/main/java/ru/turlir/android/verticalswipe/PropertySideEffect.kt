@@ -1,4 +1,4 @@
-package io.apiqa.android.verticalswipe
+package ru.turlir.android.verticalswipe
 
 import android.util.Property
 import android.view.View

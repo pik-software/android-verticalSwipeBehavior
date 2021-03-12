@@ -6,7 +6,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
-import io.apiqa.android.verticalswipe.*
+import ru.turlir.android.verticalswipe.*
 
 class MainActivity : AppCompatActivity() {
 

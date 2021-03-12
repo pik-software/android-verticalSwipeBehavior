@@ -1,4 +1,4 @@
-package io.apiqa.android.verticalswipe
+package ru.turlir.android.verticalswipe
 
 /**
  * Sets limits on moving the view vertically

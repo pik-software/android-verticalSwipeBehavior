@@ -20,6 +20,6 @@
         android:text="@string/drag_me"
         android:textColor="#FFF"
         android:textSize="24sp"
-        app:layout_behavior="io.apiqa.android.verticalswipe.VerticalSwipeBehavior" />
+        app:layout_behavior="ru.turlir.android.verticalswipe.VerticalSwipeBehavior" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
