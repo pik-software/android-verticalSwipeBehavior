@@ -8,8 +8,8 @@ android {
     defaultConfig {
         minSdkVersion project.min
         targetSdkVersion project.target
-        versionCode codeVersion.toInteger()
-        versionName nameVersion
+        versionCode VERSION_CODE.toInteger()
+        versionName VERSION_NAME
         consumerProguardFiles 'consumer-rules.pro'
     }
     buildTypes {
