@@ -16,7 +16,7 @@ Check repository
 ``` gradle
 allprojects {
     repositories {
-        jcenter()
+        mavenCentral()
     }
 }
 ```
@@ -25,7 +25,7 @@ Add dependency in to `build.gradle`
 
 ``` gradle
 dependencies {
-    implementation 'io.apiqa.android:verticalswipebehavior:1.0.0'
+    implementation 'ru.turlir.android:verticalswipebehavior:1.2.0'
 }
 ```
 
@@ -33,7 +33,7 @@ Usage
 --------
 
 You should have CoordinatorLayout in parent view. Add tag
-`app:layout_behavior="io.apiqa.android.verticalswipe.VerticalSwipeBehavior"` to your banner.
+`app:layout_behavior="ru.turlir.android.verticalswipe.VerticalSwipeBehavior"` to your banner.
 Padding or margin is optional for positioning. View top is a start point for animation.
 
 ``` xml
@@ -48,7 +48,7 @@ Padding or margin is optional for positioning. View top is a start point for ani
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/drag_me"
-        app:layout_behavior="io.apiqa.android.verticalswipe.VerticalSwipeBehavior" />
+        app:layout_behavior="ru.turlir.android.verticalswipe.VerticalSwipeBehavior" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 ```
