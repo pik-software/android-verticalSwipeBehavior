@@ -9,7 +9,7 @@ Moves the released view at the given vertical position.
 Download
 --------
 
-[ ![Download](https://api.bintray.com/packages/iljaosintsev/VerticalSwipeBehavior/verticalswipebehavior/images/download.svg) ](https://bintray.com/iljaosintsev/VerticalSwipeBehavior/verticalswipebehavior/_latestVersion)
+[ ![Download](https://img.shields.io/maven-central/v/ru.turlir.android/verticalswipebehavior) ](https://search.maven.org/artifact/ru.turlir.android/verticalswipebehavior)
 
 Check repository
 
